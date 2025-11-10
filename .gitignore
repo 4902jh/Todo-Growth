@@ -1,0 +1,45 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.DS_Store
+
+# Gradle
+backend-java/.gradle
+backend-java/build/
+backend-java/out/
+backend-java/*.iml
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Node.js
+frontend/node_modules/
+frontend/build/
+frontend/.pnp
+frontend/.pnp.js
+frontend/coverage/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+
+# Application properties (민감한 정보)
+#backend-java/src/main/resources/application-local.properties
+
