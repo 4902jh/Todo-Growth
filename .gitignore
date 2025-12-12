@@ -1,3 +1,4 @@
+
 # Java
 *.class
 *.jar
@@ -43,4 +44,6 @@ Thumbs.db
 # Application properties (민감한 정보)
 #backend-java/src/main/resources/application-local.properties
 
+=======
+>>>>>>> c42269d (ignore DS_Store)
 .DS_Store
