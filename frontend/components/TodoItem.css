@@ -1,0 +1,121 @@
+.todo-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.todo-item.completed {
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    border: 2px solid #4facfe;
+}
+
+.todo-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.todo-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn-complete,
+.btn-fail {
+    flex: 1;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-complete {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-complete:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-fail {
+    background: #f5f5f5;
+    color: #666;
+}
+
+.btn-fail:hover:not(:disabled) {
+    background: #e0e0e0;
+}
+
+.btn-complete:disabled,
+.btn-fail:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.completed-badge {
+    text-align: center;
+    padding: 12px;
+    background: rgba(79, 172, 254, 0.1);
+    border-radius: 8px;
+    color: #4facfe;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+.message {
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    animation: slideIn 0.3s ease;
+}
+
+.message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.warning {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+}
+
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
