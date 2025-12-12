@@ -109,4 +109,3 @@ POST /api/game/users/{userId}/todos/{todoId}/fail
 - [게임 디자인](GAME_DESIGN.md) - 게임화 요소 설계
 - [게임화 UI 가이드](GAMIFICATION_UI_GUIDE.md) - UI 요소 설명
 
-

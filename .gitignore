@@ -43,3 +43,4 @@ Thumbs.db
 # Application properties (민감한 정보)
 #backend-java/src/main/resources/application-local.properties
 
+.DS_Store
